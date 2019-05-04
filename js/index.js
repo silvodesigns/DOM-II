@@ -60,3 +60,15 @@ source.forEach(function(element){
         event.preventDefault();
     })
 });
+
+// addEventListener version
+window.addEventListener('online', (event) => {
+    console.log("You are now connected to the network.");
+});
+
+//double click
+const busPic = document.querySelector('.intro img');
+
+busPic.addEventListener('dblclick', function (e) {
+  console.log("was double clicked");
+});
