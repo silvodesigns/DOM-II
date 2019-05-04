@@ -44,7 +44,7 @@ function logKey(e) {
 
   });
 }
-
+//SCROLL EVENT
 var bodyWindow = document.querySelector("body");
 window.addEventListener('scroll', function(e) {
    if(e.isTrusted == true){
@@ -53,3 +53,10 @@ window.addEventListener('scroll', function(e) {
 
 });
 
+//COPY EVENT
+const source = document.querySelectorAll("body p");
+source.forEach(function(element){
+    element.addEventListener('copy', function(event){
+        event.preventDefault();
+    })
+});
