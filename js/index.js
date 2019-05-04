@@ -72,3 +72,17 @@ const busPic = document.querySelector('.intro img');
 busPic.addEventListener('dblclick', function (e) {
   console.log("was double clicked");
 });
+
+//mouse over
+const mouseTarget = document.querySelector('header');
+mouseTarget.addEventListener('mouseenter', e => {
+    mouseTarget.style.border = '5px dotted orange';
+    
+  });
+
+//mouse out
+mouseTarget.addEventListener("mouseout", function( event ) {   
+    // highlight the mouseout target
+    event.target.style.backgroundColor = "blue";
+});
+  
