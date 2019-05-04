@@ -61,6 +61,13 @@ source.forEach(function(element){
     })
 });
 
+//PASTE EVENT
+source.forEach(function(element){
+    element.addEventListener('paste', function(event){
+        event.preventDefault();
+    })
+});
+
 // addEventListener version
 window.addEventListener('online', (event) => {
     console.log("You are now connected to the network.");
